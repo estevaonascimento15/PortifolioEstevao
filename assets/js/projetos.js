@@ -8,7 +8,7 @@ function projetos(section) {
           <h3>Restaurante</h3>
           <div class="img-wrapper">
             <img
-              src="./assets/images/projects/restaurante.gif"
+              src="./assets/images/projects/Restaurante.gif"
               alt="GIF do projeto Restaurante."
             />
             <div class="buttons">
