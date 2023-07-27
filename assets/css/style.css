@@ -5,19 +5,20 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Bebás neue", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 :root {
-  --primary-color: #070302;
-  --primary-hover: #3dfa12;
-  --secundary-color: hsl(276, 94%, 50%);
-  --third-color: hsla(310, 88%, 53%, 0.877);
-  --bg-color: hsl(101, 91%, 55%);
+  --hue: 20;
+  --primary-color: hsl(var(--hue), 92%, 43%);
+  --primary-hover: #42DC1D;
+  --secundary-color: hsl(0, 0%, 5%);
+  --third-color: hsla(0, 0%, 100%, 0.1);
+  --bg-color: hsl(0, 0%, 8%);
 
-  --headline: hsl(262, 27%, 92%);
-  --paragraph: #153397;
-  --paragraph-2: #96e874;
+  --headline: hsl(0, 0%, 100%);
+  --paragraph: hsla(234, 95%, 41%, 0.973);
+  --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
 
   font-size: 62.5%;
 
@@ -35,7 +36,7 @@ body {
 }
 
 body {
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   text-align: center;
 
   overflow: overlay;
@@ -44,12 +45,12 @@ body {
 }
 
 body.light-mode {
-  --secundary-color: rgb(229, 229, 229);
+  --secundary-color: #7900dc;
   --third-color: hwb(0 48% 52% / 0.356);
-  --bg-color: rgb(241, 241, 241);
+  --bg-color: #42DC1D;
 
   --headline: hsl(0, 0%, 0%);
-  --paragraph: rgb(32, 32, 32);
+  --paragraph: #142a8c;
   --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 3%);
 }
 
@@ -233,7 +234,7 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 }
 
 #backToTopButton circle {
-  fill: var(--primary-color);
+  fill: #142a8c;
 }
 
 #contact li path,
@@ -277,7 +278,7 @@ body.light-mode nav.scroll {
 /* LOGO */
 
 a.logo {
-  font-family: "Bebás neue", sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
   font-size: 3rem;
   opacity: 0.7;
 }
@@ -501,8 +502,8 @@ body.menu-expanded button path {
   width: 27rem;
   height: 27rem;
 
-  background-color: #3dfa129a;
-  border-radius: 100%;
+  background-color: var(--primary-color);
+  border-radius: 90%;
 
   position: absolute;
   bottom: -3.1rem;
@@ -528,21 +529,10 @@ body.menu-expanded button path {
   }
 }
 
-@keyframes appear-vidro {
-  from {
-    right: -4rem;
-    opacity: 0;
-  }
-  to {
-    right: -2rem;
-    opacity: 1;
-  }
-}
-
 /*===== ABOUT =================================================*/
 
 #about {
-  text-align: left;
+  text-align: justify;
 }
 
 #about .content p {
@@ -554,6 +544,7 @@ body.menu-expanded button path {
   color: var(--paragraph);
   font-weight: bold;
 }
+
 
 #about .col-a {
   margin-bottom: 6rem;
@@ -861,12 +852,12 @@ body.menu-expanded button path {
   width: 13rem;
   height: 5rem;
 
-  background-color: black;
+  background-color: rgb(223, 223, 223);
   border-radius: 100%;
 }
 
 body.light-mode #contact .col-b::after {
-  background-color: grey;
+  background-color: rgb(0, 0, 0);
 }
 
 /*===== FOOTER ===============================================*/
@@ -937,8 +928,8 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   width: 8rem;
   height: 4rem;
 
-  background-color: var(--secundary-color);
-  border: 0.1rem solid var(--primary-color);
+  background-color: #142a8c;
+  border: 0.1rem solid #142a8c;
   border-radius: 5rem;
 
   display: flex;
@@ -1309,6 +1300,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4rem;
+    
   }
 
   #knowledge .card {
