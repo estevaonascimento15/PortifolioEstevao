@@ -1,4 +1,4 @@
-import { desafios } from "./desafios.js";
+
 import { projetos } from "./projetos.js";
 
 const navigation = document.querySelector("#navigation");
@@ -6,10 +6,7 @@ const backToTopButton = document.querySelector("#backToTopButton");
 const toggle = document.querySelector("#sw-checkbox");
 const projectsSection = document.querySelector("#projects .wrapper");
 
-const notebook_1 = document.querySelector("#notebook-1");
-const notebook_2 = document.querySelector("#notebook-2");
-const notebook_2_white = document.querySelector("#notebook-2-white");
-const vidro = document.querySelector("#vidro");
+const notebook = document.querySelector("#notebook");
 
 window.addEventListener("load", function begin() {
   projetos(projectsSection);
@@ -27,11 +24,11 @@ window.addEventListener("scroll", onScroll);
 onScroll();
 
 window.onload = setTimeout(() => {
-  notebook_1.style.opacity = 0;
+  notebook.style.opacity = 10;
 
-  notebook_1.style.animation = "none";
-  notebook_2.style.animation = "none";
-  notebook_2_white.style.animation = "none";
+  style.animation = "none";
+  style.animation = "none";
+  white.style.animation = "none";
   vidro.style.animation = "none";
 }, 4000);
 
