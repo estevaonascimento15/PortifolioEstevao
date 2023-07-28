@@ -10,9 +10,7 @@ const notebook = document.querySelector("#notebook");
 
 window.addEventListener("load", function begin() {
   projetos(projectsSection);
-  const desafioBtn = document.querySelector("#desafio");
 
-  
 });
 
 window.addEventListener("scroll", onScroll);
