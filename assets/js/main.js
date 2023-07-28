@@ -12,12 +12,7 @@ window.addEventListener("load", function begin() {
   projetos(projectsSection);
   const desafioBtn = document.querySelector("#desafio");
 
-  desafioBtn.addEventListener("click", () => {
-    desafios(projectsSection);
-    document
-      .querySelector("#backToProjectsBtn")
-      .addEventListener("click", begin);
-  });
+  
 });
 
 window.addEventListener("scroll", onScroll);
